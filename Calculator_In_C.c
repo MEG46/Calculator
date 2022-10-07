@@ -3,28 +3,30 @@ int main(){
 	char c;
 	char ch;
 	do{
-	int num1,num2;
+	double num1,num2;
 	printf("Please enter a number : ");
-	scanf("%d",&num1);
+	scanf("%lf",&num1);
 	fflush(stdin);
 	printf("Please enter a process : ");
 	scanf("%c",&c);
 	fflush(stdin);
 	printf("Please enter a number : ");
-	scanf("%d",&num2);
+	scanf("%lf",&num2);
 	fflush(stdin);
 	if(c=='+'){
-		printf("%d + %d = %d\n",num1,num2,(num1+num2));
+		printf("%lf + %lf = %.3lf\n",num1,num2,(num1+num2));
 	}else if(c=='-'){
-		printf("%d - %d = %d\n",num1,num2,(num1-num2));
+		printf("%%lf - %lf = %.3lf\n\n",num1,num2,(num1-num2));
 	}else if(c=='*'){
-		printf("%d * %d = %d\n",num1,num2,(num1*num2));
+		printf("%lf x %lf = %.3lf\n\n",num1,num2,(num1*num2));
 	}else if(c=='/'){
 		if(num==0){
-		printf("%d / %d = %d\n",num1,num2,(num1/num2));
+			printf("Couldn't be divided by 0.\n");
+		}
+		printf("%lf / %lf = %.3lf\n\n",num1,num2,(num1/num2));
 		}
 	}else if(c=='%'){
-		printf("%d %% %d = %d\n",num1,num2,(num1%num2));
+		printf("%d %% %d = %d\n",(int)num1,(int)num2,((int)num1%(int)num2));
 	}else{
 		printf("Invalid Process!");
 	}
