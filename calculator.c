@@ -46,7 +46,7 @@ int main(){
 				num1=result;
 			}else if(ch=='/'){
 				if(num2==0){
-					printf("Couldn't divided by zero. Please enter a different number!\n'");
+					printf("Couldn't divided by zero. Please enter a different number!\n");
 				}else{
 				result=div(num1,num2,ch);
 				printres(num1,num2,ch,result);
@@ -77,7 +77,7 @@ int main(){
 				num1=result;
 			}else if(ch=='/'){
 				if(num2==0){
-					printf("Couldn't divided by zero. Please enter a different number!\n'");
+					printf("Couldn't divided by zero. Please enter a different number!\n");
 				}else{
 				result=div(num1,num2,ch);
 				printres(num1,num2,ch,result);
@@ -85,7 +85,7 @@ int main(){
 			}
 			}else if(ch=='0'){
 				count=0;
-				printf("Refleshed!\n");
+				printf("Refreshed!\n");
 			}else{
 				invalid();
 			}
